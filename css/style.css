@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Kurale');
+
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -6,28 +8,68 @@
 
 body{
     font-size: 14px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Kurale', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1em;
+    text-align: center;
+    box-sizing: inherit;
+    color: #000;
 }
 
+a{
+    color: inherit;
+}
 img{
     width: 500px;
     max-width: 100%;
-    padding: .5em;
-    border: 2px solid #000;
+    border-radius: 10px;
+    transition: all .5s ease-in-out;
+}
+
+img:hover{
+    transform: scale(1.05);
 }
 p{
     padding: .5em 0 .5em 0;
-    text-align: justify;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+}
+
+h1, h2{
+    display: flex;
+    line-height: 2;
+    align-items: center;
+    text-align: center;
+}
+
+h1::after,
+h2::after,
+h1::before,
+h2::before{
+    content: "";
+    flex: auto;
+    height: .1em;
+    background-color: #000;
+}
+
+h1::after,
+h2::after{
+    margin-left: .3em;
+}
+
+h1::before,
+h2::before{
+    margin-right: .3em;
 }
 
 
 .ingredients ul{
     padding: 1rem;
+    width: 95vw;
+    margin: auto;
+    list-style: none;
 }
 
 .ingredients ul li{
-    text-align: justify;
-    width: 50vw;
     padding: 0 1em 0 1em;
 }
